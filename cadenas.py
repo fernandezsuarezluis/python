@@ -48,7 +48,7 @@ print(cadena2.split(",")) #indicar cuál es el elemento por el que deseo separar
 nombre_2 = input("Dime tu nombre:") # solicito un input en string
 print(nombre_2)
 
-numero = int(input("Dime un número:")) # en caso de un int, tengo que castearlo para poder operar con élluis
+numero = int(input("Dime un número:")) # en caso de un int, tengo que castearlo para poder operar con él
 print(numero + 3)
 
 
