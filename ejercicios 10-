@@ -1,0 +1,61 @@
+#!/usr/bn/env python     --> script python
+# -*- coding: utf-8 -*-  --> codificación utf8
+
+__author__ = "Luis" 
+__license__ = "GPL" 
+__email__ = "a23luisfs@iessanclemente.net"
+
+import math
+from math import pi
+from math import sqrt
+from math import pi as PI_VALUE
+
+#10
+libras = float(input("Introduzca la cantidad en libras: "))
+euros = libras * 1.10
+print(str(libras) + " libras son " + str(euros) + " euros")
+
+#11
+salario_bruto = float(input("Introduce tu salario bruto: "))
+irpf = float(input("Introduce el IRPF a aplicar en porcentaje: "))
+salario_neto = salario_bruto - (salario_bruto * (irpf * 0.01))
+print("Tu salario neto es: " + str(salario_neto) + " euros")
+
+#12
+x_polinomio = int(input("Introduce un valor para x:"))
+sol_polinomio = (2 * x_polinomio * 2 + 5 * x_polinomio - 3)
+print("La solución del polinomio 2 * x * 2 + 5 * x - 3 con el valor que has dado es:"+ str(sol_polinomio))
+
+#13
+radio_cilindro = int(input("Introduce el radio del cilindro:"))
+altura_cilindro = int(input("Introduce la altura del cilindro:"))
+volumen_cilindro = (pi * ((radio_cilindro)*(radio_cilindro)) * altura_cilindro)
+print("El volumen del cilindro es:", volumen_cilindro)
+
+#14
+radio_esfera = int(input("Introduce el radio de la esfera:"))
+volumen_esfera = (4/3) * pi * (radio_esfera)**3
+print("El volumen de la esfera es:", volumen_esfera)
+
+#15
+from math import sqrt
+
+# Solicita los coeficientes de la ecuación cuadrática
+a = float(input("Introduce el coeficiente cuadrático (a): "))
+b = float(input("Introduce el coeficiente lineal (b): "))
+c = float(input("Introduce el término independiente (c): "))
+
+# Calcula el discriminante
+discriminante = b**2 - 4*a*c
+
+# Verifica si hay soluciones reales
+if discriminante < 0:
+    print("La ecuación no tiene soluciones reales.")
+else:
+    # Calcula las dos soluciones
+    sol_1 = (-b + sqrt(discriminante)) / (2*a)
+    sol_2 = (-b - sqrt(discriminante)) / (2*a)
+    
+    # Imprime las soluciones
+    print(f"Las soluciones para x son: {sol_1} y {sol_2}")
+
